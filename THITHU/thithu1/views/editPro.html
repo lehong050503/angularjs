@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <form>
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" ng-model="inPV.name">
+                  <div class="form-text"><p ng-if="validate.name" style="color: red;">Vui lòng nhập tên</p></div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Price</label>
+                    <input type="text" class="form-control" ng-model="inPV.price">
+                    <div class="form-text"><p ng-if="validate.price" style="color: red;">Vui lòng nhập giá</p></div>
+                    <div class="form-text"><p ng-if="validate.price0" style="color: red;">Giá phải là số nguyên dương lớn hơn 100</p></div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">CategoryName</label>
+                    <input type="text" class="form-control" ng-model="inPV.categoryName">
+                    <div class="form-text"><p ng-if="validate.categoryName" style="color: red;">Vui lòng nhập tên danh mục</p></div>
+                </div>
+                <button ng-click="onSubmit()" type="submit" class="btn btn-success">EDIT</button>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

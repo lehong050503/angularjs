@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="row-1"></div>
+    <div class="row-1o">
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>CATEGORY NAME</th>
+                <th>
+                    <button ng-click="addPro()">ADD</button>
+                </th>
+            </tr>
+            <tr ng-repeat="ds in danhSach">
+                <td>{{ds.id}}</td>
+                <td>{{ds.name}}</td>
+                <td>{{ds.price}}</td>
+                <td>{{ds.categoryName}}</td>
+                <td>
+                    <button ng-click="editPro(ds.id)">EDIT</button>
+                    <button ng-click="onDelete(ds.id)">DELETE</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row-1"></div>
+</div>

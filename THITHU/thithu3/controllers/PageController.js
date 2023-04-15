@@ -1,0 +1,4 @@
+window.PageController = function($scope){
+    $scope.title = "Page";
+    $scope.text = "Dữ liệu cá nhân của bạn được Louis Vuitton Malletier xử lý đề quản lý và nâng cao trải nghiệm khách hàng, cung cấp thông tin vê các sản phâm và dịch vụ của Louis Vuitton cũng như dùng cho mục đích thống kê, khảo sát. Thông tin của bạn được chuyền đến các tổ chức Louis Vuitton trên toàn thế giới, bao gồm cả bên ngoài Liên minh Châu Âu, để cung cấp cho bạn thông tin toàn diện về thương hiệu. Nhăm đảm bảo độ an toàn, việc chuyển thông tin cá nhân của bạn ra ngoài Liên minh Châu Âu đã được CNIL cho phép (quyết định ngày 15 tháng 9 năm 2006) và chịu sự điều chỉnh của các điều khoản hợp đồng tiêu chuẩn của Ủy ban Châu Âu. Theo luật của Pháp sô 78-17 “Informatiquc et Libertés” được sửa đổi vào năm 2004, bạn có thể truy cập, sửa đổi hoặc xóa dữ liệu cá nhân bằng cách gửi yêu cầu đến Trung tâm tư vấn Khách hàng.";
+}

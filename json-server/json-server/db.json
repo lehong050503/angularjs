@@ -1,0 +1,90 @@
+{
+  "posts": [
+    {
+      "ten": "json-server22",
+      "tuoi": "typicode",
+      "id": 1
+    }
+  ],
+  "veMayBay": [
+    {
+      "id": 1,
+      "hoTen": "Lê Thị Hồng",
+      "cccd": 38303016888,
+      "email": "hongltph28123@fpt.edu.vn",
+      "gt": "Nữ",
+      "sdt": "0986575465",
+      "chuyenBay": "Hà Nội",
+      "ngaySinh": "5/5/2003",
+      "hanhLy": 10,
+      "thanhToan": "MOMO"
+    }
+  ],
+  "nhanVien": [
+    {
+      "id": 1,
+      "ten": "Le Thi Hong",
+      "gt": "Nữ",
+      "tuoi": 20,
+      "tien": "2000000"
+    }
+  ],
+  "productsO": [
+    {
+      "id": 1,
+      "name": "Bún cá",
+      "price": 35000,
+      "categoryName": "food"
+    }
+  ],
+  "tacGia": [
+    {
+      "id": 1,
+      "ten": "Bún cá",
+      "tuoi": 20,
+      "diaChi": "Thanh Hóa",
+      "gt": "Nam"
+    }
+  ],
+  "phone": [
+    {
+      "ten": "Bún cá",
+      "hang": "SamSung",
+      "dungLuong": "64GB",
+      "gia": 9000,
+      "id": 1
+    }
+  ],
+  "dongHo": [
+    {
+      "ten": "dongho1",
+      "loai": "Đồng hồ thời trang",
+      "gia": 900099,
+      "id": 2
+    },
+    {
+      "ten": "dongho4",
+      "loai": "Đồng hồ trẻ em",
+      "gia": 9999,
+      "id": 3
+    },
+    {
+      "ten": "dongho3",
+      "loai": "Đồng hồ trẻ em",
+      "gia": 9909090999,
+      "id": 4
+    },
+    {
+      "ten": "dongho2",
+      "loai": "Đồng hồ trẻ em",
+      "gia": 9000000,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "ten": "lan1",
+      "loai": "Đồng hồ thời trang",
+      "gia": 909090
+    }
+  ]
+}

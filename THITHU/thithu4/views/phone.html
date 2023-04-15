@@ -1,0 +1,79 @@
+<div class="box-form row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h3>{{title}}</h3>
+        <form action="">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tên</label>
+                <div class="col-sm-10">
+                  <input ng-model="inPV.ten" type="text" class="form-control" id="inputPassword">
+                </div>
+                <span ng-if="validate.ten" class="badge rounded-pill text-bg-danger">Bạn chưa nhập tên</span>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Hãng</label>
+                <div class="col-sm-10">
+                    <select ng-model="inPV.hang" class="form-select" aria-label="Default select example">
+                        <option value="">Chọn hãng</option>
+                        <option value="SamSung">SamSung</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Oppo">Oppo</option>
+                      </select>
+                </div>
+                <span ng-if="validate.hang" class="badge rounded-pill text-bg-danger">Bạn chưa chọn hãng</span>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Dung lượng</label>
+                <div class="col-sm-10">
+                    <select ng-model="inPV.dungLuong" class="form-select" aria-label="Default select example">
+                        <option value="">Chọn dung lượng</option>
+                        <option value="64GB">64GB</option>
+                        <option value="128GB">128GB</option>
+                        <option value="256GB">256GB</option>
+                        <option value="512GB">512GB</option>
+                        <option value="1TB">1TB</option>
+                      </select>
+                </div>
+                <span ng-if="validate.dungLuong" class="badge rounded-pill text-bg-danger">Bạn chưa chọn dung lượng</span>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Giá</label>
+                <div class="col-sm-10">
+                  <input ng-model="inPV.gia" type="number" class="form-control" id="inputPassword">
+                </div>
+                <span ng-if="validate.gia" class="badge rounded-pill text-bg-danger">Bạn chưa nhập giá</span>
+                <span ng-if="validate.gia2" class="badge rounded-pill text-bg-danger">Giá phải là số nguyên dương lớn hơn 100</span>
+            </div>
+            <div class="mb-3 row">
+                <button ng-click="add()">Add</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Tên</th>
+        <th scope="col">Hãng</th>
+        <th scope="col">Dung lượng</th>
+        <th scope="col">Giá</th>
+        <th scope="col">Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="ds in danhSach">
+        <th scope="row">{{ds.id}}</th>
+        <td>{{ds.ten}}</td>
+        <td>{{ds.hang}}</td>
+        <td>{{ds.dungLuong}}</td>
+        <td>{{ds.gia}}</td>
+        <td>
+            <button ng-click="detail(ds.id)">Detail</button>
+            <button ng-click="delete(ds.id)">Delete</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
